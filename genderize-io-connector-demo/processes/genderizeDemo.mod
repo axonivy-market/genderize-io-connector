@@ -33,9 +33,9 @@ ge0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ge0 f0 @C|.responsibility Everybody #txt
 ge0 f0 81 49 30 30 -52 23 #rect
 ge0 f1 497 49 30 30 0 15 #rect
-ge0 f3 dialogId genderize.io.enterForm #txt
-ge0 f3 startMethod start(genderize.io.Data) #txt
-ge0 f3 requestActionDecl '<genderize.io.Data data> param;' #txt
+ge0 f3 dialogId com.axonivy.connector.genderize.io.connector.demo.enterForm #txt
+ge0 f3 startMethod start(com.axonivy.connector.genderize.io.connector.demo.Data) #txt
+ge0 f3 requestActionDecl '<com.axonivy.connector.genderize.io.connector.demo.Data data> param;' #txt
 ge0 f3 requestMappingAction 'param.data=in;
 ' #txt
 ge0 f3 responseMappingAction 'out=in;
@@ -51,9 +51,9 @@ personal data</name>
 ' #txt
 ge0 f3 168 42 112 44 -38 -16 #rect
 ge0 f4 111 64 168 64 #arcP
-ge0 f5 dialogId genderize.io.showSalutationForm #txt
-ge0 f5 startMethod start(genderize.io.Data) #txt
-ge0 f5 requestActionDecl '<genderize.io.Data data> param;' #txt
+ge0 f5 dialogId com.axonivy.connector.genderize.io.connector.demo.showSalutationForm #txt
+ge0 f5 startMethod start(com.axonivy.connector.genderize.io.connector.demo.Data) #txt
+ge0 f5 requestActionDecl '<com.axonivy.connector.genderize.io.connector.demo.Data data> param;' #txt
 ge0 f5 requestMappingAction 'param.data=in;
 ' #txt
 ge0 f5 responseMappingAction 'out=in;

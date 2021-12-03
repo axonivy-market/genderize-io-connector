@@ -1,0 +1,4 @@
+enterFormData #class
+com.axonivy.connector.genderize.io.connector.demo.enterForm #namespace
+data com.axonivy.connector.genderize.io.connector.demo.Data #field
+data PERSISTENT #fieldModifier
