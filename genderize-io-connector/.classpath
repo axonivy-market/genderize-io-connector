@@ -34,5 +34,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="lib/generated/rest/jaxRsClient_f056a122-aaf1-4271-90eb-9d0cc81e0743.jar"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>
