@@ -16,7 +16,7 @@ public class GenderizeIoDemoTest {
 
   private void genderRequest(String firstname, String expectedSaluation) {
     open(EngineUrl.createProcessUrl(
-            "/genderize-io-connector-demo/17646F3A476DCB66/salutationDemo.ivp"));
+            "genderize-io-connector-demo/17646F3A476DCB66/salutationDemo.ivp"));
     $(By.id("form:dataFirstname")).sendKeys(firstname);
     $(By.id("form:proceed")).shouldBe(enabled).click();
     assertThat($(By.id("form:dataSaluation")).getValue()).isEqualTo(expectedSaluation);
