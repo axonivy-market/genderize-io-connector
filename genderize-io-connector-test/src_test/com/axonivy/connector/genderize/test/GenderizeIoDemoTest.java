@@ -11,7 +11,7 @@ import org.openqa.selenium.By;
 import com.axonivy.ivy.webtest.IvyWebTest;
 import com.axonivy.ivy.webtest.engine.EngineUrl;
 
-@IvyWebTest(headless = false)
+@IvyWebTest(headless = true)
 public class GenderizeIoDemoTest {
 
   private void genderRequest(String firstname, String expectedSaluation) {
