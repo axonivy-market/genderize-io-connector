@@ -12,7 +12,7 @@ import com.axonivy.ivy.webtest.IvyWebTest;
 import com.axonivy.ivy.webtest.engine.EngineUrl;
 
 @IvyWebTest
-public class GenderizeIoDemoTest {
+public class GenderizeIoDemoIT {
 
   private void genderRequest(String firstname, String expectedSaluation) {
     open(EngineUrl.createProcessUrl(
