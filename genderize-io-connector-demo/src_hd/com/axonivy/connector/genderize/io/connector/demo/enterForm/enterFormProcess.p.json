@@ -1,0 +1,82 @@
+{
+  "format" : "9.4.20",
+  "id" : "17D80AB951163DA2",
+  "data" : "com.axonivy.connector.genderize.io.connector.demo.enterForm.enterFormData",
+  "kind" : "HTML_DIALOG",
+  "elements" : [ {
+      "id" : "f0",
+      "type" : "HtmlDialogStart",
+      "name" : "start(Data)",
+      "config" : {
+        "callSignature" : "start",
+        "result" : {
+          "params" : [
+            { "name" : "data", "type" : "com.axonivy.connector.genderize.io.connector.demo.Data" }
+          ],
+          "map" : {
+            "result.data" : "in.data"
+          }
+        },
+        "input" : {
+          "params" : [
+            { "name" : "data", "type" : "com.axonivy.connector.genderize.io.connector.demo.Data" }
+          ],
+          "map" : {
+            "out.data" : "param.data"
+          }
+        },
+        "guid" : "17D80AB9515E3F11"
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 64 },
+        "labelOffset" : { "x" : 27, "y" : 35 }
+      },
+      "connect" : { "id" : "f2", "to" : "f1" }
+    }, {
+      "id" : "f1",
+      "type" : "HtmlDialogEnd",
+      "visual" : {
+        "at" : { "x" : 224, "y" : 64 }
+      }
+    }, {
+      "id" : "f3",
+      "type" : "HtmlDialogEventStart",
+      "name" : "close",
+      "config" : {
+        "guid" : "17D80AB951938B4C"
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 160 },
+        "labelOffset" : { "x" : 9, "y" : 35 }
+      },
+      "connect" : { "id" : "f7", "to" : "f6" }
+    }, {
+      "id" : "f4",
+      "type" : "HtmlDialogExit",
+      "visual" : {
+        "at" : { "x" : 352, "y" : 160 }
+      }
+    }, {
+      "id" : "f6",
+      "type" : "RestClientCall",
+      "name" : "getGender",
+      "config" : {
+        "path" : "/",
+        "clientId" : "f056a122-aaf1-4271-90eb-9d0cc81e0743",
+        "clientErrorCode" : "ivy:error:rest:client",
+        "queryParams" : {
+          "name" : "in.data.firstname",
+          "country_id" : ""
+        },
+        "statusErrorCode" : "ivy:error:rest:client",
+        "responseMapping" : {
+          "out.data.saluation" : "result.gender == \"male\" ? \"Mr.\" : \"Mrs.\";"
+        },
+        "resultType" : "io.genderize.api.client.Gender"
+      },
+      "visual" : {
+        "at" : { "x" : 224, "y" : 160 }
+      },
+      "connect" : { "id" : "f5", "to" : "f4" }
+    } ]
+}
