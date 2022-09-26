@@ -1,0 +1,89 @@
+{
+  "format" : "9.4.20",
+  "id" : "17646F3A476DCB66",
+  "data" : "com.axonivy.connector.genderize.io.connector.demo.Data",
+  "elements" : [ {
+      "id" : "f0",
+      "type" : "RequestStart",
+      "name" : "salutationDemo.ivp",
+      "config" : {
+        "callSignature" : "salutationDemo",
+        "outLink" : "salutationDemo.ivp",
+        "startName" : "Genderize.io Connector Demo",
+        "tags" : "demo"
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 64 },
+        "labelOffset" : { "x" : 16, "y" : 43 }
+      },
+      "connect" : { "id" : "f4", "to" : "f3" }
+    }, {
+      "id" : "f1",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 512, "y" : 64 }
+      }
+    }, {
+      "id" : "f3",
+      "type" : "DialogCall",
+      "name" : [
+        "Enter your",
+        "personal data"
+      ],
+      "config" : {
+        "dialogId" : "com.axonivy.connector.genderize.io.connector.demo.enterForm",
+        "startMethod" : "start(com.axonivy.connector.genderize.io.connector.demo.Data)",
+        "output" : {
+          "map" : {
+            "out" : [
+              "in",
+              "result.data"
+            ]
+          }
+        },
+        "call" : {
+          "params" : [
+            { "name" : "data", "type" : "com.axonivy.connector.genderize.io.connector.demo.Data" }
+          ],
+          "map" : {
+            "param.data" : "in"
+          }
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 224, "y" : 64 }
+      },
+      "connect" : { "id" : "f6", "to" : "f5" }
+    }, {
+      "id" : "f5",
+      "type" : "DialogCall",
+      "name" : [
+        "Show",
+        "salutation"
+      ],
+      "config" : {
+        "dialogId" : "com.axonivy.connector.genderize.io.connector.demo.showSalutationForm",
+        "startMethod" : "start(com.axonivy.connector.genderize.io.connector.demo.Data)",
+        "output" : {
+          "map" : {
+            "out" : [
+              "in",
+              "result.data"
+            ]
+          }
+        },
+        "call" : {
+          "params" : [
+            { "name" : "data", "type" : "com.axonivy.connector.genderize.io.connector.demo.Data" }
+          ],
+          "map" : {
+            "param.data" : "in"
+          }
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 384, "y" : 64 }
+      },
+      "connect" : { "id" : "f2", "to" : "f1" }
+    } ]
+}
