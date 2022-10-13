@@ -1,8 +1,10 @@
 {
-  "format" : "9.4.20",
+  "format" : "10.0.0",
   "id" : "17D80AB951163DA2",
-  "data" : "com.axonivy.connector.genderize.io.connector.demo.enterForm.enterFormData",
   "kind" : "HTML_DIALOG",
+  "config" : {
+    "data" : "com.axonivy.connector.genderize.io.connector.demo.enterForm.enterFormData"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "HtmlDialogStart",
