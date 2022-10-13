@@ -1,8 +1,10 @@
 {
-  "format" : "9.4.20",
+  "format" : "10.0.0",
   "id" : "17D80B000BFB6287",
-  "data" : "com.axonivy.connector.genderize.io.connector.demo.showSalutationForm.showSalutationFormData",
   "kind" : "HTML_DIALOG",
+  "config" : {
+    "data" : "com.axonivy.connector.genderize.io.connector.demo.showSalutationForm.showSalutationFormData"
+  },
   "elements" : [ {
       "id" : "f0",
       "type" : "HtmlDialogStart",
