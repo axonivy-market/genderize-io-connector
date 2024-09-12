@@ -1,15 +1,12 @@
 # Genderize.io Connector
-Axon Ivy’s [genderize.io](https://genderize.io) connector helps you to
-accelerate process automation initiatives by predicting the gender of a person
-given their name. The connector gives you access to a powerful API which is for
-free up to 1000 names/day. This connector:
 
-- Provides a powerful solution to implement modern UI patterns.
-- Supports three different usages. A simple one-name determination, a batch
-  usage for up to 10 names at a time and a classification of genders in the
-  scope of a specific country.
-- Enables you to easily enhance missing properties in any process data to
-  guarantee a successful backend data synchronization.
+Axon Ivy's [genderize.io](https://genderize.io) connector gives you access to a powerful API that returns the likely gender of that
+name to output the probable gender of the name bearer(s).
+
+This connector supports three different uses:
+- A simple determination of the gender based on the name
+- batch use for up to 10 names at once
+- and a classification of the gender in the context of a specific country (e.g. "Andrea" usually has a female connotation in Germany and a male connotation in Italy).
 
 
 ## Demo
