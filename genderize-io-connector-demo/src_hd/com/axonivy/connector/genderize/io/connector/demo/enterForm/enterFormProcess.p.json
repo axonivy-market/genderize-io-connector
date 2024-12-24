@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "$schema" : "https://json-schema.axonivy.com/process/12.0.0/process.json",
   "id" : "17D80AB951163DA2",
   "kind" : "HTML_DIALOG",
   "config" : {
@@ -10,21 +10,21 @@
       "type" : "HtmlDialogStart",
       "name" : "start(Data)",
       "config" : {
-        "callSignature" : "start",
-        "result" : {
-          "params" : [
-            { "name" : "data", "type" : "com.axonivy.connector.genderize.io.connector.demo.Data" }
-          ],
-          "map" : {
-            "result.data" : "in.data"
-          }
-        },
+        "signature" : "start",
         "input" : {
           "params" : [
-            { "name" : "data", "type" : "com.axonivy.connector.genderize.io.connector.demo.Data" }
+            { "name" : "data", "type" : "com.axonivy.connector.genderize.io.connector.demo.Data", "desc" : "" }
           ],
           "map" : {
             "out.data" : "param.data"
+          }
+        },
+        "result" : {
+          "params" : [
+            { "name" : "data", "type" : "com.axonivy.connector.genderize.io.connector.demo.Data", "desc" : "" }
+          ],
+          "map" : {
+            "result.data" : "in.data"
           }
         },
         "guid" : "17D80AB9515E3F11"
@@ -33,7 +33,9 @@
         "at" : { "x" : 96, "y" : 64 },
         "labelOffset" : { "x" : 27, "y" : 35 }
       },
-      "connect" : { "id" : "f2", "to" : "f1" }
+      "connect" : [
+        { "id" : "f2", "to" : "f1" }
+      ]
     }, {
       "id" : "f1",
       "type" : "HtmlDialogEnd",
@@ -51,7 +53,9 @@
         "at" : { "x" : 96, "y" : 160 },
         "labelOffset" : { "x" : 9, "y" : 35 }
       },
-      "connect" : { "id" : "f7", "to" : "f6" }
+      "connect" : [
+        { "id" : "f7", "to" : "f6" }
+      ]
     }, {
       "id" : "f4",
       "type" : "HtmlDialogExit",
@@ -63,22 +67,28 @@
       "type" : "RestClientCall",
       "name" : "getGender",
       "config" : {
-        "path" : "/",
-        "clientId" : "f056a122-aaf1-4271-90eb-9d0cc81e0743",
-        "clientErrorCode" : "ivy:error:rest:client",
-        "queryParams" : {
-          "name" : "in.data.firstname",
-          "country_id" : ""
+        "target" : {
+          "clientId" : "f056a122-aaf1-4271-90eb-9d0cc81e0743",
+          "path" : "/",
+          "queryParams" : {
+            "name" : "in.data.firstname",
+            "country_id" : ""
+          }
         },
-        "statusErrorCode" : "ivy:error:rest:client",
-        "responseMapping" : {
-          "out.data.saluation" : "result.gender == \"male\" ? \"Mr.\" : \"Mrs.\";"
-        },
-        "resultType" : "io.genderize.api.client.Gender"
+        "response" : {
+          "entity" : {
+            "type" : "io.genderize.api.client.Gender",
+            "map" : {
+              "out.data.saluation" : "result.gender == \"male\" ? \"Mr.\" : \"Mrs.\";"
+            }
+          }
+        }
       },
       "visual" : {
         "at" : { "x" : 224, "y" : 160 }
       },
-      "connect" : { "id" : "f5", "to" : "f4" }
+      "connect" : [
+        { "id" : "f5", "to" : "f4" }
+      ]
     } ]
 }
