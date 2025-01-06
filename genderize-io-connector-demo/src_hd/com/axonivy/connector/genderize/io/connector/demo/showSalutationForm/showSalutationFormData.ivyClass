@@ -1,4 +1,0 @@
-showSalutationFormData #class
-com.axonivy.connector.genderize.io.connector.demo.showSalutationForm #namespace
-data com.axonivy.connector.genderize.io.connector.demo.Data #field
-data PERSISTENT #fieldModifier

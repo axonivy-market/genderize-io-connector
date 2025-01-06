@@ -1,0 +1,11 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/data-class/12.0.0/data-class.json",
+  "simpleName" : "enterFormData",
+  "namespace" : "com.axonivy.connector.genderize.io.connector.demo.enterForm",
+  "isBusinessCaseData" : false,
+  "fields" : [ {
+    "name" : "data",
+    "type" : "com.axonivy.connector.genderize.io.connector.demo.Data",
+    "modifiers" : [ "PERSISTENT" ]
+  } ]
+}
