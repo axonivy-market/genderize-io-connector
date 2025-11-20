@@ -1,34 +1,35 @@
-# Genderize.io Anschluss
+# Genderize.io-Konnektor
 
-#Axon Efeus [genderize.io](https://genderize.io) Anschluss gibt du greifst zu zu
-ein kraftvolles API jene Rückgaben das wahrscheinliche Geschlecht von jenem
-Namen zu ausgeben das mutmaßliche Geschlecht von den Name Inhaber(s).
+Der [genderize.io](https://genderize.io)-Konnektor von Axon Ivy bietet Ihnen
+Zugriff auf eine leistungsstarke API, die das wahrscheinliche Geschlecht des
+Namens zurückgibt, um das wahrscheinliche Geschlecht des/der Namensträger(s)
+auszugeben.
 
-Diese Anschluss Unterstützungen drei verschiedene Nutzungen:
-- Ein simpler Entschluss von dem Geschlecht gegründet auf dem Namen
-- Schub Nutzung für bis 10 Namen sofort
-- Und eine Einordnung von dem Geschlecht in dem Kontext von einem spezifischen
-  Land (gewöhnlich "#z.B." Andrea hat einen weiblichen Beiklang in Deutschland
-  und einen männlichen Beiklang in Italien).
+Dieser Konnektor unterstützt drei verschiedene Verwendungszwecke:
+- Eine einfache Bestimmung des Geschlechts anhand des Namens
+- Batch-Verwendung für bis zu 10 Namen gleichzeitig
+- und eine Klassifizierung des Geschlechts im Kontext eines bestimmten Landes
+  (z. B. hat „Andrea” in Deutschland normalerweise eine weibliche Konnotation
+  und in Italien eine männliche Konnotation).
 
 ## Demo
 
-Mit diesem Anschluss ein Demo Arbeitsgang will sein installiert zu demonstrieren
-eine simple Nutzung Fall ermittelt jener das Geschlecht von einer Person und
-automatisch fügt zu den Anrede Besitz zu #der Arbeitsgang #Daten.
+Mit diesem Konnektor wird ein Demo-Prozess installiert, um einen einfachen
+Anwendungsfall zu demonstrieren, der das Geschlecht einer Person ermittelt und
+automatisch die Anrede-Eigenschaft zu den Prozessdaten hinzufügt.
 
-API Anruf
+API-Aufruf
 
-![Geschlecht-forder auf](images/genderRequestInscribe.png)
+![gender-request](images/genderRequestInscribe.png)
 
-Resultat Vermessung
+Ergebniszuordnung
 
-![Geschlecht-Antwort](images/genderResponseInscribe.png)
+![gender-response](images/genderResponseInscribe.png)
 
-Beispiel: #Einlesen #Formen
+Beispiel: Eingabeformular
 
-![Form-herein](images/genderDialogIn.png)
+![form-in](images/genderDialogIn.png)
 
-Beispiel: #Resultieren #Formen
+Beispiel: Ergebnisformular
 
-![Von-resultier](images/genderDialogResult.png)
+![from-result](images/genderDialogResult.png)
