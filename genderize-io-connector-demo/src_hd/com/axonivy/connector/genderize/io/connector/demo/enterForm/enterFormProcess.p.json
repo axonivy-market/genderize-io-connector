@@ -79,7 +79,7 @@
           "entity" : {
             "type" : "io.genderize.api.client.Gender",
             "map" : {
-              "out.data.saluation" : "result.gender == \"male\" ? \"Mr.\" : \"Mrs.\";"
+              "out.data.salutation" : "result.gender == \"male\" ? \"Mr.\" : \"Mrs.\";"
             }
           }
         }
