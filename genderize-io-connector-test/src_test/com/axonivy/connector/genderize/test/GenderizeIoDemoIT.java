@@ -14,12 +14,12 @@ import com.axonivy.ivy.webtest.engine.EngineUrl;
 @IvyWebTest
 public class GenderizeIoDemoIT {
 
-  private void genderRequest(String firstname, String expectedSaluation) {
+  private void genderRequest(String firstname, String expectedSalutation) {
     open(EngineUrl.createProcessUrl(
             "genderize-io-connector-demo/17646F3A476DCB66/salutationDemo.ivp"));
     $(By.id("form:dataFirstname")).sendKeys(firstname);
     $(By.id("form:proceed")).shouldBe(enabled).click();
-    assertThat($(By.id("form:dataSaluation")).getValue()).isEqualTo(expectedSaluation);
+    assertThat($(By.id("form:dataSalutation")).getValue()).isEqualTo(expectedSalutation);
   }
 
   @Test

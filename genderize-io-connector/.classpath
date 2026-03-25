@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><classpath>
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
 	<classpathentry kind="src" path="src">
 		<attributes>
 			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
-		
 	<classpathentry kind="src" path="src_wsproc">
 		<attributes>
 			<attribute name="optional" value="true"/>
@@ -25,5 +25,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="lib/generated/rest/jaxRsClient_f056a122-aaf1-4271-90eb-9d0cc81e0743.jar"/>
-	<classpathentry kind="output" path="classes"/>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>
