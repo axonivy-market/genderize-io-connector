@@ -1,19 +1,19 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/data-class/13.1.0/data-class.json",
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/data-class.json",
   "simpleName" : "Data",
   "namespace" : "com.axonivy.connector.genderize.io.connector.demo",
-  "isBusinessCaseData" : false,
   "fields" : [ {
     "name" : "firstname",
-    "type" : "String"
+    "modifiers" : [ ]
   }, {
     "name" : "lastname",
-    "type" : "String"
+    "modifiers" : [ ]
   }, {
     "name" : "salutation",
-    "type" : "String"
+    "modifiers" : [ ]
   }, {
     "name" : "birthday",
-    "type" : "Date"
+    "type" : "Date",
+    "modifiers" : [ ]
   } ]
 }

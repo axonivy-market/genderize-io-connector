@@ -1,5 +1,5 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/process/13.2.0/process.json",
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/process.json",
   "id" : "17D80AB951163DA2",
   "kind" : "HTML_DIALOG",
   "config" : {
@@ -68,7 +68,7 @@
       "name" : "getGender",
       "config" : {
         "target" : {
-          "clientId" : "f056a122-aaf1-4271-90eb-9d0cc81e0743",
+          "clientId" : "Genderizeio-API-Genderize",
           "path" : "/",
           "queryParams" : {
             "name" : "in.data.firstname",

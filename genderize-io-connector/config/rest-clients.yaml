@@ -1,8 +1,13 @@
+# yaml-language-server: $schema=https://json-schema.axonivy.com/14.0-dev/config/rest-clients-1.json
 RestClients:
   #A simple API to predict the gender of a person given their name
-  Genderize.io API (Genderize):
-    UUID: f056a122-aaf1-4271-90eb-9d0cc81e0743
+  Genderizeio-API-Genderize:
+    Name: Genderize.io API (Genderize)
     Url: https://api.genderize.io
     Icon: res:/webContent/icons/genderize.png
     Features:
-    - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
+      - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
+    OpenAPI:
+      SpecUrl: file:///C:/ivy/git/market/market/connector/genderize/openapi.json
+      Namespace: io.genderize.api.client
+    LegacyUUID: f056a122-aaf1-4271-90eb-9d0cc81e0743
