@@ -1,5 +1,5 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/process/13.2.0/process.json",
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/process.json",
   "id" : "17646F3A476DCB66",
   "config" : {
     "data" : "com.axonivy.connector.genderize.io.connector.demo.Data"
