@@ -4,6 +4,7 @@
   "namespace" : "com.axonivy.connector.genderize.io.connector.demo.enterForm",
   "fields" : [ {
     "name" : "data",
-    "type" : "com.axonivy.connector.genderize.io.connector.demo.Data"
+    "type" : "com.axonivy.connector.genderize.io.connector.demo.Data",
+    "modifiers" : [ ]
   } ]
 }

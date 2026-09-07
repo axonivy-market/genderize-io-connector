@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://json-schema.axonivy.com/14.0-dev/config/rest-clients-1.json
+# yaml-language-server: $schema=https://json-schema.axonivy.com/14.0-dev/config/rest-clients-2.json
 RestClients:
   #A simple API to predict the gender of a person given their name
   Genderizeio-API-Genderize:
