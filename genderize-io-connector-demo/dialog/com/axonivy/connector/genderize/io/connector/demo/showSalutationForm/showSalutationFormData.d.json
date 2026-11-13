@@ -1,0 +1,10 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/14.0/project/data-class.json",
+  "simpleName" : "showSalutationFormData",
+  "namespace" : "com.axonivy.connector.genderize.io.connector.demo.showSalutationForm",
+  "fields" : [ {
+    "name" : "data",
+    "type" : "com.axonivy.connector.genderize.io.connector.demo.Data",
+    "modifiers" : [ ]
+  } ]
+}

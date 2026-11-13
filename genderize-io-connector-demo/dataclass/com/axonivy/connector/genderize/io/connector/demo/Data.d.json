@@ -1,0 +1,19 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/14.0/project/data-class.json",
+  "simpleName" : "Data",
+  "namespace" : "com.axonivy.connector.genderize.io.connector.demo",
+  "fields" : [ {
+    "name" : "firstname",
+    "modifiers" : [ ]
+  }, {
+    "name" : "lastname",
+    "modifiers" : [ ]
+  }, {
+    "name" : "salutation",
+    "modifiers" : [ ]
+  }, {
+    "name" : "birthday",
+    "type" : "Date",
+    "modifiers" : [ ]
+  } ]
+}

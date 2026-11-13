@@ -1,0 +1,10 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/14.0/project/data-class.json",
+  "simpleName" : "enterFormData",
+  "namespace" : "com.axonivy.connector.genderize.io.connector.demo.enterForm",
+  "fields" : [ {
+    "name" : "data",
+    "type" : "com.axonivy.connector.genderize.io.connector.demo.Data",
+    "modifiers" : [ ]
+  } ]
+}

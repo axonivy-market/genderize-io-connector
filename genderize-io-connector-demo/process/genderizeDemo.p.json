@@ -1,0 +1,76 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/14.0/project/process.json",
+  "id" : "17646F3A476DCB66",
+  "config" : {
+    "data" : "com.axonivy.connector.genderize.io.connector.demo.Data"
+  },
+  "elements" : [ {
+      "id" : "f0",
+      "type" : "RequestStart",
+      "name" : "salutationDemo.ivp",
+      "config" : {
+        "signature" : "salutationDemo",
+        "request" : {
+          "name" : "Genderize.io Connector Demo"
+        }
+      },
+      "tags" : [
+        "demo"
+      ],
+      "visual" : {
+        "at" : { "x" : 96, "y" : 64 },
+        "labelOffset" : { "x" : 16, "y" : 43 }
+      },
+      "connect" : [
+        { "id" : "f4", "to" : "f3" }
+      ]
+    }, {
+      "id" : "f1",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 512, "y" : 64 }
+      }
+    }, {
+      "id" : "f3",
+      "type" : "DialogCall",
+      "name" : [
+        "Enter your",
+        "personal data"
+      ],
+      "config" : {
+        "dialog" : "com.axonivy.connector.genderize.io.connector.demo.enterForm:start(com.axonivy.connector.genderize.io.connector.demo.Data)",
+        "call" : {
+          "map" : {
+            "param.data" : "in"
+          }
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 224, "y" : 64 }
+      },
+      "connect" : [
+        { "id" : "f6", "to" : "f5" }
+      ]
+    }, {
+      "id" : "f5",
+      "type" : "DialogCall",
+      "name" : [
+        "Show",
+        "salutation"
+      ],
+      "config" : {
+        "dialog" : "com.axonivy.connector.genderize.io.connector.demo.showSalutationForm:start(com.axonivy.connector.genderize.io.connector.demo.Data)",
+        "call" : {
+          "map" : {
+            "param.data" : "in"
+          }
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 384, "y" : 64 }
+      },
+      "connect" : [
+        { "id" : "f2", "to" : "f1" }
+      ]
+    } ]
+}
